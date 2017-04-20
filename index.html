@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repo App</title>
+  </head>
+  <body ng-app="RepoSearch">
+    <h1>Repo App</h1>
+    <div ng-controller="RepoSearchController as findRepo">
+      <input type="text" placeholder="Enter github name" ng-model="findRepo.name">
+      <button ng-click="findRepo.getData()">Search</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
